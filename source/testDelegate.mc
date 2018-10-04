@@ -6,9 +6,9 @@ class testDelegate extends WatchUi.BehaviorDelegate {
         BehaviorDelegate.initialize();
     }
 
-    function onMenu() {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new testMenuDelegate(), WatchUi.SLIDE_UP);
+ 
+ function onMenu() {
+        timer1.stop();
         return true;
     }
-
 }
